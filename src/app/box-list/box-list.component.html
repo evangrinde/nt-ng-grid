@@ -1,0 +1,18 @@
+<div class="boxes">
+  <div *ngFor="let box of boxes" class="box" [ngClass]="'box-' + box.id">
+      <div class="content">
+        <div class="title">
+          <h3>Box {{ box.id }}</h3>
+          <h6>{{ box.address}}</h6>
+        </div>
+
+        <div class="text">
+          <p>{{ box.content}}</p>
+        </div>
+      </div>
+
+      <div class="btn" style="background-color:{{  box.ctaBgColor }}">
+        Cool
+      </div>
+    </div>
+</div>
