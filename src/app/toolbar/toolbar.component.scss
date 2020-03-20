@@ -4,7 +4,7 @@
   .nav {
     display: flex;
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
 
     .nav-link {
       margin: 0.75rem 1.5rem;
@@ -26,11 +26,36 @@
         text-align: center;
       }
     }
+
+    .toggle {
+      margin: 0.5rem 1.5rem;
+      padding: 0.15rem;
+      background-color: #ffffff40;
+      border-radius: 50px;
+      color: #fff;
+      font-size: 1.25rem;
+
+      i {
+        padding: 1rem;
+      }
+    }
   }
 
   a {
     color: #F1F1F1;
-      font-size: 1.25rem;
-      text-decoration: none;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .nav-link {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  .toggle {
+    display: none;
   }
 }
